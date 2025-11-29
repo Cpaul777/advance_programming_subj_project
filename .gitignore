@@ -1,3 +1,7 @@
+# Environment
 venv
 .venv
 
+# Caches
+__pycache__/
+*.pyc
