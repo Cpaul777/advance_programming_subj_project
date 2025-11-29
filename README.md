@@ -3,6 +3,7 @@
 Project on our advance programming subject
 
 > Feel free to give more suggestions to add in this `README.md` file
+>
 > Let us know if there are mistakes in providing guidelines
 
 ---
@@ -14,7 +15,7 @@ Project on our advance programming subject
 - On your projects folder, open a terminal and run 
 
 ```bash
-    git clone https://github.com/Cpaul777/advance_programming_subj_project.git
+git clone https://github.com/Cpaul777/advance_programming_subj_project.git
 ```
 
 ### Setting up dependecies
@@ -22,7 +23,7 @@ Project on our advance programming subject
 - Install dependencies 
 
  ```bash
-    pip install -r requirements.txt
+ pip install -r requirements.txt
  ```
 
 ---
