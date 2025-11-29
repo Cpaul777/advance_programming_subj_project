@@ -18,13 +18,21 @@ Project on our advance programming subject
 git clone https://github.com/Cpaul777/advance_programming_subj_project.git
 ```
 
-### Setting up dependecies
+### Setting up dependencies
 
 - Install dependencies 
 
  ```bash
  pip install -r requirements.txt
  ```
+
+### Updating dependencies 
+
+- Update the `requirements.txt` file
+
+```bash
+pip freeze > requirements.txt
+```
 
 ---
 
