@@ -8,7 +8,7 @@ Project on our advance programming subject
 
 ---
 
-## Getting Started Started
+## GETTING STARTED
 
 ### Setup the project locally, contribute through pull requests 
 
@@ -34,13 +34,22 @@ git clone https://github.com/Cpaul777/advance_programming_subj_project.git
 pip freeze > requirements.txt
 ```
 
+### To run the file
+- To run the file, just run the `main.py`
+
+```bash
+python3 main.py
+```
+
 ---
 
-## Library Documentations
+## LIBRARY DOCUMENTATIONS
 
 - [Customtkinter Documentation](https://customtkinter.tomschimansky.com/documentation/)
     > [Widgets](https://customtkinter.tomschimansky.com/documentation/widgets/)
     >
 
-- [Tkinter Documentation](https://tkdocs.com/tutorial/index.html)
+- [Tkinter References](https://tkdocs.com/tutorial/index.html)
     >[Basic Widgets](https://tkdocs.com/tutorial/widgets.html)
+
+- [Tkinter References 2](https://www.pythonguis.com/tkinter-tutorial/)
