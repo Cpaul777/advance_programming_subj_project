@@ -1,8 +1,11 @@
 import customtkinter
-from src.style import style
+
+buttonWidth = 50
+buttonHeight = 40
 
 class ConfirmButtons: 
     def __init__(self, master):
+        super().__init__(master)
         self.master = master
         self.frame = customtkinter.CTkFrame(
             master=master,
@@ -16,15 +19,15 @@ class ConfirmButtons:
         self.confirm_yes = customtkinter.CTkButton(
             master=self.frame,
             text="Y",
-            width=style.buttonWidth,
-            height=style.buttonHeight,
+            width=buttonWidth,
+            height=buttonHeight,
         )
 
         self.confirm_no = customtkinter.CTkButton(
             master=self.frame,
             text="N",
-            width=style.buttonWidth,
-            height=style.buttonHeight,
+            width=buttonWidth,
+            height=buttonHeight,
         )
 
         self.confirm_yes.pack(pady=10)

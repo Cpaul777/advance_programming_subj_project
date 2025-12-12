@@ -1,5 +1,4 @@
 import customtkinter
-from src.style import style
 
 class WelcomeScreen:
     def __init__(self, master):
@@ -11,7 +10,6 @@ class WelcomeScreen:
         )
         self.frame.pack(expand=True, fill="both", padx=100 ,pady=20)
 
-        
         self.label = customtkinter.CTkLabel(
             master=self.frame,
             text = "Welcome to POWERBANK\nPress OK to start",

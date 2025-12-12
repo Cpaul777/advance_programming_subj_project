@@ -1,29 +1,30 @@
 import customtkinter as ctk
-from src.style import style
 from src.widgets import buttons, frames
 
-app = ctk.CTk()
-app.title("App Banking System")
-app.geometry(f"{style.windowWidth}x{style.windowHeight}")
-app.resizable(False,False)
+class App(customtkinter.CTk):
+    def __init__(self):
+        super().__init__()
+        self.geometry("800x600")
+        self.resizable(False, False)
+        self.title("App Banking System")
 
-# Confirmation Buttons
-buttons.ConfirmButtons(app)
+        # add widgets to app
+        self.button = customtkinter.CTkButton(self, command=self.button_click)
+        self.button.grid(row=0, column=0, padx=20, pady=10)
 
-#Action buttons
-buttons.ActionButtons(app).balance()
-buttons.ActionButtons(app).deposit()
-# frame screen
-frames.WelcomeScreen(app)
+    buttons.ConfirmButtons()
 
-# Just for testing purposes
-app.ada = ctk.CTkButton(app, text="DID THIS WORK?")
-app.ada.pack(pady=50)
+    def button_click(self):
+        print("button click")
 
 
 
-# Action Buttons
-# buttons.back_button(app)
+    def current_frame(self):
+        frame = self.frames(name)
+
+
+app = App()
+
 
 
 
