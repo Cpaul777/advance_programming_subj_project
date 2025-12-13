@@ -12,7 +12,6 @@ class App(customtkinter.CTk):
         self.button = customtkinter.CTkButton(self, command=self.button_click)
         self.button.grid(row=0, column=0, padx=20, pady=10)
 
-    buttons.ConfirmButtons()
 
     def button_click(self):
         print("button click")
