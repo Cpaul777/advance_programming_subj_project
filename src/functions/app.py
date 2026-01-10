@@ -4,13 +4,15 @@ from src.widgets import frames
 
 class App(ctk.CTk):
     def __init__(self):
+        # CTK instantation
         super().__init__()
         self.geometry("800x600")
         self.title("App Banking System")
         self.windowState = "MENU"
 
-        # Grid configuratio
+        # Grid configuration
         self.grid_rowconfigure(0, weight=1)
+        self.grid_rowconfigure(1, weight=0)
         self.grid_columnconfigure(1, weight=1)
 
         # Frames for buttons and the screen
@@ -20,13 +22,13 @@ class App(ctk.CTk):
         self.keypad = frames.Keypad(self, self)
 
         # Placements of the frames
-        self.action_btns.grid(row=0, rowspan=4,column=0, sticky="ns")
-        self.screen_frame.grid(row=0, rowspan=5, column=1, columnspan=4,padx=5, sticky="nsew")
-        self.confirmation.grid(row=0, rowspan=2, column=5, padx=5, sticky="ns")
-        self.keypad.grid(row=6, rowspan=4, column=1, columnspan=4, sticky="ew")
+        self.screen_frame.grid(row=0, rowspan=4, column=1, columnspan=2,padx=3, sticky="nsew")
+        self.action_btns.grid(row=0, rowspan=4,column=0, padx=10, sticky="ns")
+        self.confirmation.grid(row=0, rowspan=4, column=3, padx=10, sticky="ns")
+        self.keypad.grid(row=5, rowspan=4, column=1, pady=(20,0))
 
     def handle_actions(self, action):
-        if self.windowstate == "MENU":
+        if self.windowState == "MENU":
             if action=="B":
                 self.windowState = "BALANCE"
             elif action=="W":
@@ -36,6 +38,7 @@ class App(ctk.CTk):
             elif action=="Q":
                 self.windowState = "MENU"
             else:
+                # For Debugging purposes
                 self.CTkInputDialog(text="??? How'd you even get this error, sum ting rong wid your code boi", title="Error")
                 # self.CTkMessageBox()
         
